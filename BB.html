@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banyubancar Travel | Best For Your Trip</title>
+    <link rel="icon" type="image/png" href="logo.jpeg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="BB.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="log.png" alt="Banyubancar Logo">
+                <div class="logo-text">
+                    <span class="brand-name">BANYUBANCAR</span>
+                    <span class="brand-sub">NUSANTARA</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#layanan">Layanan</a></li>
+                <li><a href="#rute">Rute</a></li>
+                <li><a href="#pemesanan">Pemesanan</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle-btn" title="Ubah Tema">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-watermark">
+            <img src="logo.jpeg" alt="Watermark Background">
+        </div>
+
+        <div class="hero-content scroll-reveal">
+            <span class="hero-tag">PREMIUM TRAVEL SERVICE</span>
+            <h1 class="hero-title">Banyubancar Travel</h1>
+            <h2 class="hero-subtitle">Best For Your Trip</h2>
+            <p class="hero-desc">Layanan transportasi eksekutif dengan kenyamanan armada prima dan rute terbaik demi kepuasan perjalanan Anda.</p>
+            <div class="hero-buttons">
+                <a href="#pemesanan" class="btn btn-primary">Pesan Sekarang</a>
+                <a href="https://wa.me/6282140490944" target="_blank" class="btn btn-secondary">Hubungi WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="layanan" class="services-section">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2>Layanan Kami</h2>
+                <p>Fasilitas kelas satu yang dirancang khusus untuk kenyamanan Anda sepanjang perjalanan.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon"><i class="fa-solid fa-couch"></i></div>
+                    <h3>Executive Shuttle</h3>
+                    <p>Kursi ergonomis yang lega dengan fasilitas AC, charger HP, dan musik.</p>
+                </div>
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon"><i class="fa-solid fa-house-chimney"></i></div>
+                    <h3>Door to Door</h3>
+                    <p>Layanan jemput di depan rumah dan antar tepat sampai ke lokasi tujuan Anda.</p>
+                </div>
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon"><i class="fa-solid fa-van-shuttle"></i></div>
+                    <h3>Charter Unit</h3>
+                    <p>Penyewaan unit armada penuh untuk kebutuhan keluarga, bisnis, maupun wisata.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rute" class="routes-section">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2>Rute Utama</h2>
+                <p>Konektivitas rute terbaik yang menghubungkan kota-kota strategis secara tepat waktu.</p>
+            </div>
+            <div class="routes-grid scroll-reveal">
+                <div class="route-badge"><i class="fa-solid fa-map-pin"></i> Malang</div>
+                <div class="route-badge"><i class="fa-solid fa-map-pin"></i> Gresik</div>
+                <div class="route-badge"><i class="fa-solid fa-map-pin"></i> Lamongan</div>
+                <div class="route-badge"><i class="fa-solid fa-map-pin"></i> Paciran</div>
+                <div class="route-badge"><i class="fa-solid fa-map-pin"></i> Tuban</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pemesanan" class="booking-section">
+        <div class="container">
+            <div class="booking-wrapper glassmorphism scroll-reveal">
+                <div class="booking-header">
+                    <h2><i class="fa-solid fa-ticket"></i> Form Pemesanan</h2>
+                    <p>Lengkapi data perjalanan Anda untuk terhubung langsung ke WhatsApp Admin.</p>
+                </div>
+                <form id="travelBookingForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="namaPemesan">Nama Pemesan</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-user"></i>
+                                <input type="text" id="namaPemesan" placeholder="Nama lengkap Anda" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="noWhatsApp">Nomor WhatsApp / HP</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-phone"></i>
+                                <input type="tel" id="noWhatsApp" placeholder="Contoh: 081234567xxx" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="tanggal">Tanggal Keberangkatan</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <input type="date" id="tanggal" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="pilihanWaktu">Pilihan Waktu</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-clock"></i>
+                                <select id="pilihanWaktu" required>
+                                    <option value="" disabled selected>Pilih jam keberangkatan</option>
+                                    <option value="06:00 Pagi">06:00 Pagi</option>
+                                    <option value="13:00 Siang">13:00 Siang</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="alamatPenjemputan">Alamat Penjemputan</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <textarea id="alamatPenjemputan" rows="2" placeholder="Alamat detail penjemputan" required></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="alamatTujuan">Alamat Tujuan</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                                <textarea id="alamatTujuan" rows="2" placeholder="Alamat detail lokasi tujuan" required></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="jumlahPenumpang">Jumlah Penumpang</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-users"></i>
+                                <input type="number" id="jumlahPenumpang" min="1" placeholder="Jumlah orang" required>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-submit"><i class="fa-brands fa-whatsapp"></i> Kirim Pemesanan via WhatsApp</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="tentang" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text scroll-reveal">
+                    <span class="sub-title">TENTANG KAMI</span>
+                    <h2>PT BANYUBANCAR NUSANTARA</h2>
+                    <p>Kami adalah penyedia jasa travel profesional berkomitmen tinggi yang siap melayani mobilitas Anda dengan mengedepankan keamanan serta ketepatan waktu. Melalui manajemen modern dan armada terawat, kami memastikan perjalanan Anda terasa
+                        nyaman di setiap kilometer.</p>
+                </div>
+                <div class="about-visual scroll-reveal">
+                    <img src="logo.jpeg" alt="Banyubancar Logo Clean" class="about-logo-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <h3>Banyubancar Travel</h3>
+                <p>Menyediakan layanan perjalanan terbaik, nyaman, and aman di kelasnya.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/1bitbJQHjN/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/banyubancar?igsh=MTl6ZTl0cm40MDFiYg==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@banyubancar?_r=1&_t=ZS-96alEZoc55x" target="_blank" class="tiktok-link"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Navigasi</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#layanan">Layanan</a></li>
+                    <li><a href="#rute">Rute</a></li>
+                    <li><a href="#pemesanan">Pemesanan</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Kontak</h4>
+                <p><i class="fa-solid fa-phone"></i> +62 821-4049-0944</p>
+                <p><i class="fa-solid fa-envelope"></i> info@banyubancartravel.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 PT Banyubancar Nusantara. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/6282140490944" target="_blank" class="floating-wa" title="Hubungi Admin">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="BB.js"></script>
+</body>
+
+</html>
